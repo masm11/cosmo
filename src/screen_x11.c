@@ -89,6 +89,8 @@ static struct screen_t *screen_x11_new(int *argcp, char **argv)
 {
     struct screen_x11_t *w = malloc(sizeof *w);
     
+    XInitThreads();
+    
     memset(w, 0, sizeof *w);
     
     w->ops = &screen_x11_ops;
