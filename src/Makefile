@@ -8,4 +8,4 @@ cgp: $(OBJS)
 	$(CC) -o $@ $(OBJS) -L/usr/X11R6/lib -lXpm -lXext -lX11 -lcurses -lpthread
 
 clean:
-	rm -f *.o cgp
+	-rm -f *.o cgp
